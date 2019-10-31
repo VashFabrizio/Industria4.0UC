@@ -7,10 +7,10 @@
     android:orientation="vertical"
     tools:context="com.example.vash.industria40uc.MainActivity">
 
-
     <ImageView
-        android:id="@+id/img_Portada"
+        android:id="@+id/img_"
         android:layout_width="match_parent"
-        android:layout_height="280dp"
-        app:srcCompat="@drawable/img_Slide" />
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_Slide"/>
+
 </LinearLayout>
