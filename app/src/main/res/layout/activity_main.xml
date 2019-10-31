@@ -13,10 +13,16 @@
         android:layout_height="wrap_content"
         android:src="@drawable/img_slide"/>
 
-    <TextView
-        android:id="@+id/tv1"
+    <ImageButton
+        android:id="@+id/imageButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="textprueba"/>
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher" />
 
 </LinearLayout>
