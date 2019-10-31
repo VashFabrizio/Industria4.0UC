@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Industria4.0UC.iml" filepath="$PROJECT_DIR$/Industria4.0UC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/Industria4.0UC-app.iml" filepath="$PROJECT_DIR$/app/Industria4.0UC-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
