@@ -7,14 +7,14 @@ public class Evento {
     private Integer idEvento;
     private String nombre;
     private String ponente;
-    private Date fecha;
-    private Time hora;
+    private String fecha;
+    private String hora;
     private String lugar;
 
     public Evento() {
     }
 
-    public Evento(Integer idEvento, String nombre, String ponente, Date fecha, Time hora, String lugar) {
+    public Evento(Integer idEvento, String nombre, String ponente, String fecha, String hora, String lugar) {
         this.idEvento = idEvento;
         this.nombre = nombre;
         this.ponente = ponente;
@@ -47,19 +47,19 @@ public class Evento {
         this.ponente = ponente;
     }
 
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
-    public Time getHora() {
+    public String getHora() {
         return hora;
     }
 
-    public void setHora(Time hora) {
+    public void setHora(String hora) {
         this.hora = hora;
     }
 

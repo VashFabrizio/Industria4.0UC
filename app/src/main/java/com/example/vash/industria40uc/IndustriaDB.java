@@ -1,9 +1,13 @@
 package com.example.vash.industria40uc;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.support.annotation.Nullable;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class IndustriaDB extends SQLiteOpenHelper {
 
@@ -35,7 +39,8 @@ public class IndustriaDB extends SQLiteOpenHelper {
     public void insertarEvento()
     {
         SQLiteDatabase database=getWritableDatabase();
-        if(database!=null)
+        Cursor cursor=database.rawQuery("SELECT*FROM evento",null);
+        if(database!=null && cursor.getCount()==0)
         {
             database.execSQL("INSERT INTO evento(evento_nombre,evento_ponente,evento_fecha,evento_hora,evento_lugar) VALUES('Personal and Professional Development Challengers of Young Professionals in the Industry 4.0'," +
                     "'Lucía Pía Torres – IEEE Industry Applications Society – Argentina'," +
@@ -100,6 +105,52 @@ public class IndustriaDB extends SQLiteOpenHelper {
             database.close();
         }
     }
+
+    public List<Evento> mostrarEventosAgenda()
+    {
+        SQLiteDatabase database=getReadableDatabase();
+        Cursor cursor=database.rawQuery("SELECT*FROM evento",null);
+        List<Evento> eventos=new ArrayList<>();
+        if(cursor.moveToFirst())
+        {
+            do {
+                eventos.add(new Evento(cursor.getInt(0),cursor.getString(1),cursor.getString(2),
+                        cursor.getString(3),cursor.getString(4),cursor.getString(5)));
+            }while (cursor.moveToNext());
+        }
+        return  eventos;
+    }
+
+    public List<Evento> mostrarEventos14N()
+    {
+        SQLiteDatabase database=getReadableDatabase();
+        Cursor cursor=database.rawQuery("SELECT*FROM evento where evento_fecha='14/11/19'",null);
+        List<Evento> eventos=new ArrayList<>();
+        if(cursor.moveToFirst())
+        {
+            do {
+                eventos.add(new Evento(cursor.getInt(0),cursor.getString(1),cursor.getString(2),
+                        cursor.getString(3),cursor.getString(4),cursor.getString(5)));
+            }while (cursor.moveToNext());
+        }
+        return  eventos;
+    }
+
+    public List<Evento> mostrarEventos15N()
+    {
+        SQLiteDatabase database=getReadableDatabase();
+        Cursor cursor=database.rawQuery("SELECT*FROM evento where evento_fecha='15/11/19'",null);
+        List<Evento> eventos=new ArrayList<>();
+        if(cursor.moveToFirst())
+        {
+            do {
+                eventos.add(new Evento(cursor.getInt(0),cursor.getString(1),cursor.getString(2),
+                        cursor.getString(3),cursor.getString(4),cursor.getString(5)));
+            }while (cursor.moveToNext());
+        }
+        return  eventos;
+    }
+
 
 
 }
