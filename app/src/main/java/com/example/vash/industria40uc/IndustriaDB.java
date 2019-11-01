@@ -5,10 +5,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.support.annotation.Nullable;
 
-import java.sql.Date;
-import java.sql.Time;
-import java.util.List;
-
 public class IndustriaDB extends SQLiteOpenHelper {
 
     private static final String DB_NAME="db_industria.bd";
