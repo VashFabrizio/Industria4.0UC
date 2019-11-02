@@ -66,24 +66,7 @@ public class CustomAdapter extends ArrayAdapter<ObjetoListView> {
                 imgVideo.setVisibility(View.GONE);
                 txtSmallIcon.setVisibility(View.GONE);
                 break;
-            case Ponentes.AUDIO:
-                txtMensaje.setVisibility(View.GONE);
-                imgAudio.setVisibility(View.VISIBLE);
-                txtSmallIcon.setVisibility(View.VISIBLE);
-                txtSmallIcon.setText(arrayList.get(position).getTxtSmallIcon());
-                break;
-            case Ponentes.IMAGEN:
-                txtMensaje.setVisibility(View.GONE);
-                imgPhoto.setVisibility(View.VISIBLE);
-                txtSmallIcon.setVisibility(View.VISIBLE);
-                txtSmallIcon.setText(arrayList.get(position).getTxtSmallIcon());
-                break;
-            case Ponentes.VIDEO:
-                txtMensaje.setVisibility(View.GONE);
-                imgVideo.setVisibility(View.VISIBLE);
-                txtSmallIcon.setVisibility(View.VISIBLE);
-                txtSmallIcon.setText(arrayList.get(position).getTxtSmallIcon());
-                break;
+
         }
 
 

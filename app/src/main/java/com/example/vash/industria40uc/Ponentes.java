@@ -15,10 +15,6 @@ public class Ponentes extends AppCompatActivity {
     private CustomAdapter customAdapter;
 
     public static final String TEXTO = "texto";
-    public static final String AUDIO = "audio";
-    public static final String IMAGEN = "imagen";
-    public static final String VIDEO = "video";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +57,7 @@ public class Ponentes extends AppCompatActivity {
         arrayList.add(new ObjetoListView("Jorge Ascencio Damián " + getEmoji(0x1F1EF)+getEmoji(0x1F1F5), "Ing. de Medio Ambiente y Energía - Universidad de Tohoku",
                 "JAP", TEXTO, true, 0, "", R.drawable.img_jorge));
 
-        arrayList.add(new ObjetoListView("Ruth Manzanares Grados "+getEmoji(0x1f1f2)+getEmoji(0x1f1fc), "Mg.Ingeniería Automotriz - Tecnológico de Monterrey",
+        arrayList.add(new ObjetoListView("Ruth Manzanares Grados "+getEmoji(0x1f1f2)+getEmoji(0x1f1fd), "Mg.Ingeniería Automotriz - Tecnológico de Monterrey",
                 "MEX", TEXTO, true, 0, "", R.drawable.img_rut));
 
         arrayList.add(new ObjetoListView("Josep Cargol Noguer " + getEmoji(0x1F1EA) +getEmoji(0x1F1F8),"Mg.Proyectos,Urbanismo e Historia-U. Politécnica de Catalunya",
