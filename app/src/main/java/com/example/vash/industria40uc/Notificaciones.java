@@ -92,13 +92,12 @@ public class Notificaciones extends AppCompatActivity {
                 String evento_name = a.getString("evento_id");
                 String notificacion_mensaje = a.getString("notificacion_mensaje");
                 String state = a.getString("notificacion_estado");
-
                 evento.setText(evento_name);
                 mensaje.setText(notificacion_mensaje);
 
                 Boolean valor = validate(notificacion_id);
                 if(!valor){
-                    tableLayout.addView(tableRow,i+1);
+                    tableLayout.addView(tableRow,i);
                     MensajesList.add(notificacion_id);
 
                 }
@@ -173,7 +172,7 @@ public class Notificaciones extends AppCompatActivity {
                         if(!validateRemove(id))
                         {
                             RemoveList.add(id);
-                            if (tableLayout.getChildCount() > 2) tableLayout.removeViewAt(i+1);
+                            if (tableLayout.getChildCount() > 2) tableLayout.removeViewAt(i);
                         }
                     }
                     else
