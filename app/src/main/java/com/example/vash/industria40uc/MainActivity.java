@@ -10,7 +10,7 @@ import android.widget.GridLayout;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    CardView ponenteCardView;
+    CardView ponenteCardView,notificationCardView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         ponenteCardView = findViewById(R.id.ponentes);
+        notificationCardView = findViewById(R.id.notificacion);
 
+        notificationCardView.setOnClickListener(this);
         ponenteCardView.setOnClickListener(this);
     }
 
@@ -30,6 +32,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.ponentes:
                 Intent i=new Intent(this, Ponentes.class);
                 startActivity(i);
+                break;
+            case R.id.notificacion:
+                Intent a=new Intent(this, Notificaciones.class);
+                startActivity(a);
                 break;
         }
     }
