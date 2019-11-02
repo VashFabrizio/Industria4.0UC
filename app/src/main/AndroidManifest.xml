@@ -9,18 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".DetalleAgenda"></activity>
-        <activity android:name=".ListaAgenda"
-            android:theme="@style/Theme.AppCompat.DayNight"
-            android:label="Eventos">
-        </activity>
-        <activity android:name=".Ponentes"
-            android:theme="@style/Theme.AppCompat.DayNight"
-            android:label="Ponentes">
-        </activity>
-        <activity android:name=".MainActivity" >
+        <activity android:name=".DetallePonente"
+            android:label="Heena Rathore"
+            android:theme="@style/Theme.AppCompat.DayNight"></activity>
+        <activity android:name=".DetallePonente_Lucia"
+            android:label="Lucía Pía Torres"
+            android:theme="@style/Theme.AppCompat.DayNight"></activity>
+        <activity android:name=".DetalleAgenda" />
+        <activity
+            android:name=".ListaAgenda"
+            android:label="Eventos"
+            android:theme="@style/Theme.AppCompat.DayNight"></activity>
+        <activity
+            android:name=".Ponentes"
+            android:label="Ponentes"
+            android:theme="@style/Theme.AppCompat.DayNight"></activity>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

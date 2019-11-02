@@ -8,7 +8,6 @@
     android:gravity="center"
     android:orientation="horizontal">
 
-
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/img_profile"
         android:layout_width="52dp"
@@ -16,13 +15,11 @@
         android:layout_margin="16dp"
         android:src="@drawable/img_heena" />
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:orientation="vertical">
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,7 +27,6 @@
             android:layout_marginBottom="4dp"
             android:gravity="center"
             android:orientation="horizontal">
-
 
             <TextView
                 android:id="@+id/txtNombre"
@@ -43,7 +39,6 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
-
             <TextView
                 android:id="@+id/txtFecha"
                 android:layout_width="wrap_content"
@@ -51,16 +46,13 @@
                 android:text="16/9/18"
                 android:textSize="12sp" />
 
-
         </LinearLayout>
-
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="horizontal">
-
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -105,9 +97,7 @@
                     android:text="0:02"
                     android:visibility="gone" />
 
-
             </LinearLayout>
-
 
             <TextView
                 android:id="@+id/badge_notification"
@@ -122,11 +112,8 @@
                 android:textStyle="bold"
                 android:visibility="gone" />
 
-
         </LinearLayout>
 
-
     </LinearLayout>
-
 
 </LinearLayout>

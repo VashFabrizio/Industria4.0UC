@@ -1,5 +1,6 @@
 package com.example.vash.industria40uc;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -28,8 +29,41 @@ public class Ponentes extends AppCompatActivity {
 
         this.listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), "Position: " + position, Toast.LENGTH_SHORT).show();
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+            {
+                if(position ==0)
+                {
+                    Intent a = new Intent(view.getContext(), DetallePonente.class);
+                    startActivity(a);
+                }
+
+                if(position ==1)
+                {
+                    Intent b = new Intent(view.getContext(), DetallePonente_Lucia.class);
+                    startActivity(b);
+                }
+
+                if(position ==2)
+                {
+                    Intent a = new Intent(view.getContext(), DetallePonente.class);
+                    startActivity(a);
+                }
+                if(position ==3)
+                {
+                    Intent a = new Intent(view.getContext(), DetallePonente.class);
+                    startActivity(a);
+                }
+                if(position ==4)
+                {
+                    Intent a = new Intent(view.getContext(), DetallePonente.class);
+                    startActivity(a);
+                }
+                if(position ==5)
+                {
+                    Intent a = new Intent(view.getContext(), DetallePonente.class);
+                    startActivity(a);
+                }
+
             }
         });
 
