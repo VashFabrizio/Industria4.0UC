@@ -9,25 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".DetallePonente"
-            android:label="Heena Rathore"
-            android:theme="@style/Theme.AppCompat.DayNight"></activity>
         <activity android:name=".DetallePonente_Lucia"
             android:label="Lucía Pía Torres"
             android:theme="@style/Theme.AppCompat.DayNight"></activity>
-        <activity android:name=".DetalleAgenda" />
-        <activity
-            android:name=".ListaAgenda"
-            android:label="Eventos"
+        <activity android:name=".DetallePonente_Jorge"
+            android:label="Jorge Ascencio Damián"
             android:theme="@style/Theme.AppCompat.DayNight"></activity>
-        <activity
-            android:name=".Ponentes"
+        <activity android:name=".DetallePonente_Heena"
+            android:label="Jorge Ascencio Damián"
+            android:theme="@style/Theme.AppCompat.DayNight"></activity>
+        <activity android:name=".DetallePonente_Joseph"
+            android:label="Josep Cargol Noguer"
+            android:theme="@style/Theme.AppCompat.DayNight"></activity>
+        <activity android:name=".DetallePonente_Juan"
+            android:label="Juan Pablo Serna Cardona"
+            android:theme="@style/Theme.AppCompat.DayNight"></activity>
+        <activity android:name=".DetallePonente_Ruth"
+            android:label="Ruth Manzanares Grados"
+            android:theme="@style/Theme.AppCompat.DayNight"></activity>
+        <activity android:name=".Ponentes"
             android:label="Ponentes"
             android:theme="@style/Theme.AppCompat.DayNight"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

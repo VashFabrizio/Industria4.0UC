@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetallePonente">
+    tools:context=".DetallePonente_Ruth">
 
     <ImageView
         android:id="@+id/img_portada"
@@ -13,13 +13,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/img_heena_portada"/>
+        android:src="@drawable/img_rut_portada"/>
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/circleImageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/img_heena"
+        android:src="@drawable/img_rut"
         app:civ_border_color="@android:color/white"
         app:civ_border_width="4dp"
         app:layout_constraintBottom_toBottomOf="@+id/img_portada"

@@ -33,7 +33,7 @@ public class Ponentes extends AppCompatActivity {
             {
                 if(position ==0)
                 {
-                    Intent a = new Intent(view.getContext(), DetallePonente.class);
+                    Intent a = new Intent(view.getContext(), DetallePonente_Heena.class);
                     startActivity(a);
                 }
 
@@ -45,23 +45,23 @@ public class Ponentes extends AppCompatActivity {
 
                 if(position ==2)
                 {
-                    Intent a = new Intent(view.getContext(), DetallePonente.class);
-                    startActivity(a);
+                    Intent c = new Intent(view.getContext(), DetallePonente_Jorge.class);
+                    startActivity(c);
                 }
                 if(position ==3)
                 {
-                    Intent a = new Intent(view.getContext(), DetallePonente.class);
-                    startActivity(a);
+                    Intent d = new Intent(view.getContext(), DetallePonente_Ruth.class);
+                    startActivity(d);
                 }
                 if(position ==4)
                 {
-                    Intent a = new Intent(view.getContext(), DetallePonente.class);
-                    startActivity(a);
+                    Intent e = new Intent(view.getContext(), DetallePonente_Joseph.class);
+                    startActivity(e);
                 }
                 if(position ==5)
                 {
-                    Intent a = new Intent(view.getContext(), DetallePonente.class);
-                    startActivity(a);
+                    Intent f = new Intent(view.getContext(), DetallePonente_Juan.class);
+                    startActivity(f);
                 }
 
             }

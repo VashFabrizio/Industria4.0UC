@@ -1,17 +1,17 @@
 package com.example.vash.industria40uc;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-public class DetallePonente extends AppCompatActivity {
+public class DetallePonente_Heena extends AppCompatActivity {
 
     TextView mTextView, m2TextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detalle_ponente);
+        setContentView(R.layout.activity_detalle_ponente_heena);
 
         mTextView = findViewById(R.id.tvBiografiaHenna);
         m2TextView=findViewById(R.id.tvNombreHenna);
