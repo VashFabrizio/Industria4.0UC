@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetallePonente_Ruth">
+    tools:context=".DetallePonente_Cesar">
+
 
     <ImageView
         android:id="@+id/img_portada"
@@ -13,13 +14,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/img_rut_portada"/>
+        android:src="@drawable/img_cesar_portada"/>
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/circleImageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/img_rut"
+        android:src="@drawable/img_cesar"
         app:civ_border_color="@android:color/white"
         app:civ_border_width="4dp"
         app:layout_constraintBottom_toBottomOf="@+id/img_portada"
@@ -114,7 +115,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="165dp"
+        android:layout_marginBottom="180dp"
         android:text="Eventos:"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

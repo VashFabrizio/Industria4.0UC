@@ -30,6 +30,7 @@ public class RecyclerViewEventoAdapter extends RecyclerView.Adapter<RecyclerView
         {
             btnEvento.setOnClickListener(this);
         }
+
         @Override
         public void onClick(View view) {
             switch (view.getId()){
@@ -40,6 +41,8 @@ public class RecyclerViewEventoAdapter extends RecyclerView.Adapter<RecyclerView
                     break;
             }
         }
+
+
     }
 
     public List<Evento> listaeventos;

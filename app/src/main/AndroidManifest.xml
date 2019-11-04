@@ -9,30 +9,63 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".DetallePonente_Lucia"
+        <activity android:name=".ListaAgenda"></activity>
+        <activity android:name=".DetalleAgenda"/>
+        <activity android:name=".DetallePonente_Jairo"
+            android:label="Jairo Vargas Bonilla"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".DetallePonente_Jose"
+            android:label="José Durán Talledo"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".DetallePonente_Italo"
+            android:label="Italo Quispe Guerra"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".DetallePonente_Cesar"
+            android:label="César Gallegos"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".DetallePonente_Edmundo"
+            android:label="Edmundo Muñoz Alvear"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".DetallePonente_Nelson"
+            android:label="Nelson Alfonso Huertas"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".DetallePonente_Lucia"
             android:label="Lucía Pía Torres"
-            android:theme="@style/Theme.AppCompat.DayNight"></activity>
-        <activity android:name=".DetallePonente_Jorge"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".DetallePonente_Jorge"
             android:label="Jorge Ascencio Damián"
-            android:theme="@style/Theme.AppCompat.DayNight"></activity>
-        <activity android:name=".DetallePonente_Heena"
-            android:label="Jorge Ascencio Damián"
-            android:theme="@style/Theme.AppCompat.DayNight"></activity>
-        <activity android:name=".DetallePonente_Joseph"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".DetallePonente_Heena"
+            android:label="Heena Rathore"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".DetallePonente_Joseph"
             android:label="Josep Cargol Noguer"
-            android:theme="@style/Theme.AppCompat.DayNight"></activity>
-        <activity android:name=".DetallePonente_Juan"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".DetallePonente_Juan"
             android:label="Juan Pablo Serna Cardona"
-            android:theme="@style/Theme.AppCompat.DayNight"></activity>
-        <activity android:name=".DetallePonente_Ruth"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".DetallePonente_Ruth"
             android:label="Ruth Manzanares Grados"
-            android:theme="@style/Theme.AppCompat.DayNight"></activity>
-        <activity android:name=".Ponentes"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".Ponentes"
             android:label="Ponentes"
-            android:theme="@style/Theme.AppCompat.DayNight"></activity>
+            android:theme="@style/Theme.AppCompat.DayNight" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

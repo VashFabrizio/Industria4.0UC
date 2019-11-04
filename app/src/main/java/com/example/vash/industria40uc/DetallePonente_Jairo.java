@@ -1,13 +1,13 @@
 package com.example.vash.industria40uc;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class DetallePonente_Jorge extends AppCompatActivity implements View.OnClickListener {
+public class DetallePonente_Jairo extends AppCompatActivity implements View.OnClickListener {
 
     TextView mTextView, m2TextView,m3TextView,m4TextView,m5TextView;
     Button button;
@@ -15,7 +15,7 @@ public class DetallePonente_Jorge extends AppCompatActivity implements View.OnCl
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detalle_ponente_jorge);
+        setContentView(R.layout.activity_detalle_ponente__jairo);
 
         mTextView = findViewById(R.id.tvBiografiaJorge);
         m2TextView=findViewById(R.id.tvNombreJorge);
@@ -23,11 +23,11 @@ public class DetallePonente_Jorge extends AppCompatActivity implements View.OnCl
         m4TextView=findViewById(R.id.tvDiaEventoJ);
         m5TextView=findViewById(R.id.tvHoraEventoJ);
 
-        mTextView.setText("Ingeniero de Medio Ambiente y Energía de la Universidad de Tohoku, Japón; con especialización en tratamiento de aguas y recuperación de energía. Pasante de visitas técnicas en múltiples plantas de tratamiento de agua y de residuos sólidos en Japón.");
-        m2TextView.setText("Jorge Ascencio Damián");
-        m3TextView.setText("Remediación Ambiental en la Industria 4.0. Caso de estudio: Japón");
-        m4TextView.setText("Viernes 15 Noviembre");
-        m5TextView.setText("9:00 a. m.");
+        mTextView.setText("Ingeniero industrial de la Universidad Javeriana y MBA de Atlantic International University. Fue Region Vice President para Centro y Sur América del Institute of Industrial and Systems Engineers (IISE), Estados Unidos.");
+        m2TextView.setText("Jairo Vargas Bonilla");
+        m3TextView.setText("¿Cómo realizar una transformación cultural para lograr holismo en la organización?");
+        m4TextView.setText("Jueves Noviembre");
+        m5TextView.setText("5:45 p. m.");
 
         button=findViewById(R.id.btn);
         button.setOnClickListener(this);

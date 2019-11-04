@@ -30,7 +30,7 @@
     <android.support.v7.widget.CardView
         android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true"
-        android:id="@+id/bankcardId"
+        android:id="@+id/usuario"
         android:layout_width="160dp"
         android:layout_height="190dp"
         android:layout_margin="10dp">
@@ -119,6 +119,7 @@
     android:layout_height="wrap_content">
 
     <android.support.v7.widget.CardView
+        android:id="@+id/mapas"
         android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true"
         android:layout_width="160dp"
@@ -302,6 +303,7 @@
         android:layout_height="wrap_content">
 
         <android.support.v7.widget.CardView
+            android:id="@+id/documentos"
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:layout_width="160dp"
@@ -341,6 +343,7 @@
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
+            android:id="@+id/qr"
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:layout_width="160dp"

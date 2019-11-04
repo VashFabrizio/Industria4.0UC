@@ -64,6 +64,42 @@ public class Ponentes extends AppCompatActivity {
                     startActivity(f);
                 }
 
+                if(position ==6)
+                {
+                    Intent g = new Intent(view.getContext(), DetallePonente_Jairo.class);
+                    startActivity(g);
+                }
+
+                if(position ==7)
+                {
+                    Intent h = new Intent(view.getContext(), DetallePonente_Nelson.class);
+                    startActivity(h);
+                }
+
+                if(position ==8)
+                {
+                    Intent i = new Intent(view.getContext(), DetallePonente_Edmundo.class);
+                    startActivity(i);
+                }
+
+                if(position ==9)
+                {
+                    Intent j = new Intent(view.getContext(), DetallePonente_Cesar.class);
+                    startActivity(j);
+                }
+
+                if(position ==10)
+                {
+                    Intent k = new Intent(view.getContext(), DetallePonente_Italo.class);
+                    startActivity(k);
+                }
+
+                if(position ==11)
+                {
+                    Intent l = new Intent(view.getContext(), DetallePonente_Jose.class);
+                    startActivity(l);
+                }
+
             }
         });
 

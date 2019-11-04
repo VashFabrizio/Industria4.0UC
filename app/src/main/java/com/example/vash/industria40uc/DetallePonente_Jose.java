@@ -1,13 +1,13 @@
 package com.example.vash.industria40uc;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class DetallePonente_Joseph extends AppCompatActivity implements View.OnClickListener {
+public class DetallePonente_Jose extends AppCompatActivity implements View.OnClickListener {
 
     TextView mTextView, m2TextView,m3TextView,m4TextView,m5TextView;
     Button button;
@@ -15,7 +15,7 @@ public class DetallePonente_Joseph extends AppCompatActivity implements View.OnC
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detalle_ponente_joseph);
+        setContentView(R.layout.activity_detalle_ponente__jose);
 
         mTextView = findViewById(R.id.tvBiografiaHenna);
         m2TextView=findViewById(R.id.tvNombreHenna);
@@ -23,11 +23,11 @@ public class DetallePonente_Joseph extends AppCompatActivity implements View.OnC
         m4TextView=findViewById(R.id.tvDiaEventoJ);
         m5TextView=findViewById(R.id.tvHoraEventoJ);
 
-        mTextView.setText("Arquitecto por la ETSAB y Magíster en Proyectos, Urbanismo e Historia en la Universitat Politécnica de Catalunya. Premio Jóvenes Arquitectos Catalunya 2000 y 2004 y Finalista Premios FAD 2005.");
-        m2TextView.setText("Josep Cargol Noguer");
-        m3TextView.setText("Territorios instantáneos, Chasquis 4.0");
-        m4TextView.setText("Viernes 15 Noviembre");
-        m5TextView.setText("11:45 a. m.");
+        mTextView.setText("Ingeniero electrónico por la Universidad Nacional Mayor de San Marcos. Ejecutivo de Procesos de Acreditación en el Instituto de Calidad y Acreditación de Programas de Computación, Ingeniería y Tecnología en Ingeniería (ICACIT).");
+        m2TextView.setText("José Durán Talledo");
+        m3TextView.setText("El ingeniero global y los desafíos de la Agenda 2030");
+        m4TextView.setText("Jueves 14 Noviembre");
+        m5TextView.setText("11:30 a. m.");
 
         button=findViewById(R.id.btn);
         button.setOnClickListener(this);

@@ -26,6 +26,7 @@ public class DetalleAgenda extends AppCompatActivity {
         btnLugar=findViewById(R.id.btnLugar);
 
         idEvento=Integer.parseInt(getIntent().getStringExtra("idEvento"));
+
         final IndustriaDB db=new IndustriaDB(this);
         List<Evento> eventoList=db.mostrarEventosAgenda();
         for(int i=0;i<=eventoList.size();i++)
