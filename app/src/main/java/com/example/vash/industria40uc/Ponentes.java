@@ -118,48 +118,6 @@ public class Ponentes extends AppCompatActivity {
 
         ArrayList<ObjetoListView> arrayList = new ArrayList<>();
 
-        arrayList.add(new ObjetoListView("Heena Rathore  " +getEmoji(0x1F1EC)+getEmoji(0x1F1E7) , "Ph.D. Ciencias de la Computación. Científica - Universidad Texas",
-                "UK", TEXTO, true, 0 , "", R.drawable.img_heena));
-
-        arrayList.add(new ObjetoListView("Lucía Pía Torres "+getEmoji(0x1F1E6)+getEmoji(0x1f1f7), "Ing. electrónica - Universidad Nacional de Tucumán",
-                "ARG", TEXTO, true, 0, "", R.drawable.img_lucia));
-
-        arrayList.add(new ObjetoListView("Jorge Ascencio Damián " + getEmoji(0x1F1EF)+getEmoji(0x1F1F5), "Ing. de Medio Ambiente y Energía - Universidad de Tohoku",
-                "JAP", TEXTO, true, 0, "", R.drawable.img_jorge));
-
-        arrayList.add(new ObjetoListView("Ruth Manzanares Grados "+getEmoji(0x1f1f2)+getEmoji(0x1f1fd), "Mg.Ingeniería Automotriz - Tecnológico de Monterrey",
-                "MEX", TEXTO, true, 0, "", R.drawable.img_rut));
-
-        arrayList.add(new ObjetoListView("Josep Cargol Noguer " + getEmoji(0x1F1EA) +getEmoji(0x1F1F8),"Mg.Proyectos,Urbanismo e Historia-U. Politécnica de Catalunya",
-                "ESP", TEXTO, true, 0, "", R.drawable.img_josep));
-
-        arrayList.add(new ObjetoListView("Juan Pablo Serna Cardona "+getEmoji(0x1F1E8) +getEmoji(0X1F1F4),
-                "Arq. y Mg. en Gestion Urbana - U. Piloto de Colombia",
-                "COL", TEXTO, true, 0, "", R.drawable.img_juan));
-
-        arrayList.add(new ObjetoListView("Jairo Vargas Bonilla"+getEmoji(0x1F1E8) +getEmoji(0X1F1F4),
-                "Ing. Industrial, MBA Atlantic ",
-                "COL", TEXTO, true, 0, "", R.drawable.img_jairo));
-
-        arrayList.add(new ObjetoListView("Nelson Alfonso Huertas "+getEmoji(0x1F1E8) +getEmoji(0X1F1F4),
-                "Geologo, Mg. en Ciencias",
-                "COL", TEXTO, true, 0, "", R.drawable.img_nelson));
-
-        arrayList.add(new ObjetoListView("Edmundo Muñoz Alvear "+getEmoji(0x1F1E8)+getEmoji(0x1F1F1),
-                "Dr. Ingenieria Medioambiental",
-                "CHI", TEXTO, true, 0, "", R.drawable.img_eduardo));
-
-        arrayList.add(new ObjetoListView("César Gallegos "+getEmoji(0x1F1F5)+getEmoji(0x1F1EA),
-                "Consultor Tecnologia, Ing. Electronico",
-                "PER", TEXTO, true, 0, "", R.drawable.img_cesar));
-
-        arrayList.add(new ObjetoListView("Italo Quispe Guerra "+getEmoji(0x1F1F5)+getEmoji(0x1F1EA),
-                "Google Product Experts - Google Beta Tester",
-                "PER", TEXTO, true, 0, "", R.drawable.img_italo));
-
-        arrayList.add(new ObjetoListView("José Durán Talledo "+getEmoji(0x1F1F5)+getEmoji(0x1F1EA),
-                "Ing. Electronico - UNMSM",
-                "PER", TEXTO, true, 0, "", R.drawable.img_jose));
 
         return arrayList;
     }

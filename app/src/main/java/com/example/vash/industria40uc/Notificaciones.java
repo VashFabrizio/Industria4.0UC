@@ -52,7 +52,7 @@ public class Notificaciones extends AppCompatActivity {
     }
     private void obtenerNotificaciones() {
 
-        String url= "http://192.168.43.110:81/serviciosRest/controladores/read_notification.php";
+        String url= "http://192.168.1.137:81/serviciosRest/controladores/read_notification.php";
         final JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET,url, null,
                 new Response.Listener<JSONObject>() {
                     @Override
