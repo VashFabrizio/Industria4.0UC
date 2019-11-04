@@ -1,16 +1,14 @@
 package com.example.vash.industria40uc;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.View;
-import android.widget.GridLayout;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    CardView ponenteCardView, agendaCardView;
+    CardView ponenteCardView, agendaCardView, qr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,9 +17,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         ponenteCardView = findViewById(R.id.ponentes);
         agendaCardView = findViewById(R.id.agenda);
+        qr = findViewById(R.id.qr);
 
         ponenteCardView.setOnClickListener(this);
         agendaCardView.setOnClickListener(this);
+        qr.setOnClickListener(this);
     }
 
     @Override
@@ -37,6 +37,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.agenda:
                 Intent j=new Intent(this, ListaAgenda.class);
                 startActivity(j);
+                break;
+            case R.id.qr:
+                Intent a=new Intent(this, LoginActivity.class);
+                startActivity(a);
                 break;
         }
     }
