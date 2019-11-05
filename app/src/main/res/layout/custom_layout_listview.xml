@@ -9,6 +9,13 @@
     android:orientation="horizontal">
 
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_profile"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/img_heena" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

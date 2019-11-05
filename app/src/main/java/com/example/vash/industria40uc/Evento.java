@@ -11,8 +11,7 @@ public class Evento {
     private String hora;
     private String lugar;
 
-    public Evento() {
-    }
+
 
     public Evento(Integer idEvento, String nombre, String ponente, String fecha, String hora, String lugar) {
         this.idEvento = idEvento;

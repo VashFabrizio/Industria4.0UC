@@ -1,6 +1,8 @@
 package com.example.vash.industria40uc;
 
 import android.app.Notification;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.NotificationManagerCompat;
@@ -52,7 +54,7 @@ public class Notificaciones extends AppCompatActivity {
     }
     private void obtenerNotificaciones() {
 
-        String url= "http://192.168.1.137:81/serviciosRest/controladores/read_notification.php";
+        String url= "http://192.168.43.110:81/serviciosRest/controladores/read_notification.php";
         final JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET,url, null,
                 new Response.Listener<JSONObject>() {
                     @Override
@@ -81,6 +83,13 @@ public class Notificaciones extends AppCompatActivity {
 
     public void setData(JSONArray array){
         try {
+
+            IndustriaDB db=new IndustriaDB(this);
+            SQLiteDatabase conexion = db.getReadableDatabase();
+            String mQuery = "SELECT evento_nombre FROM evento WHERE evento_id = ?";
+
+            List<Evento> eventoList = db.mostrarEventosAgenda();
+            String eventos =eventoList.get(1).getNombre();
             for (int i = 0 ; i < array.length() ; i++)
             {
                 View tableRow = LayoutInflater.from(this).inflate(R.layout.table_item,null,false);
@@ -89,22 +98,28 @@ public class Notificaciones extends AppCompatActivity {
 
                 JSONObject a = array.getJSONObject(i);
                 String notificacion_id = a.getString("notificacion_id");
-                String evento_name = a.getString("evento_id");
+                String eveto_id = a.getString("evento_id");
+
+                String[] selectionArgs = {eveto_id};
+                Cursor c = conexion.rawQuery(mQuery, selectionArgs);
+
+                c.moveToFirst();
+                String evento_nombre = c.getString(0);
+
                 String notificacion_mensaje = a.getString("notificacion_mensaje");
-                String state = a.getString("notificacion_estado");
-                evento.setText(evento_name);
+
+                evento.setText(evento_nombre);
                 mensaje.setText(notificacion_mensaje);
 
                 Boolean valor = validate(notificacion_id);
                 if(!valor){
                     tableLayout.addView(tableRow,i);
                     MensajesList.add(notificacion_id);
-
                 }
                 if(!valor && count >= 1){
                     Notification notification = new NotificationCompat.Builder(this, App.CHANNEL_1_ID)
                             .setSmallIcon(R.drawable.icon)
-                            .setContentTitle(evento_name)
+                            .setContentTitle(evento_nombre)
                             .setContentText(notificacion_mensaje)
                             .setPriority(NotificationCompat.PRIORITY_HIGH)
                             .setCategory(NotificationCompat.CATEGORY_EVENT)
@@ -113,13 +128,12 @@ public class Notificaciones extends AppCompatActivity {
                             .build();
                     notificationManager.notify(1,notification);
                 }
-
             }
             count ++;
         }
         catch (Exception e)
         {
-            Toast.makeText(this, String.valueOf(array.length()), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show();
         }
 
     }

@@ -121,6 +121,7 @@ public class IndustriaDB extends SQLiteOpenHelper {
         return  eventos;
     }
 
+
     public List<Evento> mostrarEventos14N()
     {
         SQLiteDatabase database=getReadableDatabase();

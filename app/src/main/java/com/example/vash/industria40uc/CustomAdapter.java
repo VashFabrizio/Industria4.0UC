@@ -45,9 +45,12 @@ public class CustomAdapter extends ArrayAdapter<ObjetoListView> {
         ImageView imgAudio = convertView.findViewById(R.id.imgAudio);
         ImageView imgPhoto = convertView.findViewById(R.id.imgPhoto);
         ImageView imgVideo = convertView.findViewById(R.id.imgVideo);
+        ImageView imgP = convertView.findViewById(R.id.img_profile);
 
 
-
+        imgP.setImageDrawable(activity.getResources().getDrawable(
+                arrayList.get(position).getImg()
+        ));
 
         txtNombre.setText(arrayList.get(position).getNombre());
         txtMensaje.setText(arrayList.get(position).getMensaje());
